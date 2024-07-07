@@ -32,14 +32,26 @@
         <h1>Welcome to My Beta Website</h1>
     </header>
     <div class="container">
-        <h2>About Us</h2>
+        <h2>About Me</h2>
         <p>My name is Aaron. Im 22 years old, and have been interested in computer related endeavours for as long as I can remember! Im extremely ambitious to be my best self, and found myself exploring other areas of computer science on my own time.</p>
+        <input type="email" id="userEmail" placeholder="Enter your email address">
         <button onclick="showMessage()">Click me!</button>
     </div>
     <script>
         function showMessage() {
             alert("Hello! This is a test button");
         }
+    </script>
+    <script>
+        function sendMail() {
+    var recipient = 'me@example.com';
+    var subject = 'Hello from my website!';
+    var body = 'This is the email body.';
+
+    var mailtoLink = 'mailto:' + recipient + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    window.open(mailtoLink);
+}
+
     </script>
 </body>
 </html>
