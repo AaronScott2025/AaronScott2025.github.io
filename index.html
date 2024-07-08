@@ -26,84 +26,76 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .dropbtn {
-          background-color: #3498DB;
-          color: white;
-          padding: 16px;
-          font-size: 16px;
-          border: none;
-          cursor: pointer;
+            background-color: #3498DB;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            margin-left: 20px;
         }
-
         .dropbtn:hover, .dropbtn:focus {
-          background-color: #2980B9;
+            background-color: #2980B9;
         }
-
         .dropdown {
-          position: relative;
-          display: inline-block;
+            position: relative;
+            display: inline-block;
         }
-
         .dropdown-content {
-          display: none;
-          position: absolute;
-          background-color: #f1f1f1;
-          min-width: 160px;
-          overflow: auto;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 1;
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
         }
-
         .dropdown-content a {
-          color: black;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
         }
     </style>
 </head>
 <body>
     <header>
         <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-          <div id="myDropdown" class="dropdown-content">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-          </div>
+            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
         </div>
         <h1>Welcome to My Beta Website</h1>
     </header>
     <div class="container">
         <h2>About Me</h2>
-        <p>My name is Aaron. Im 22 years old, and have been interested in computer related endeavours for as long as I can remember! Im extremely ambitious to be my best self, and found myself exploring other areas of computer science on my own time.</p>
+        <p>My name is Aaron. I'm 22 years old and have been interested in computer-related endeavors for as long as I can remember! I'm extremely ambitious to be my best self and have found myself exploring other areas of computer science on my own time.</p>
         <input type="email" id="userEmail" placeholder="Enter your email address">
         <button onclick="showMessage()">Click me!</button>
     </div>
     <script>
         function showMessage() {
-            alert("Hello! This is a test button");
+            alert("Hello! This is a test button.");
         }
-    </script>
-        <script>
-    /* When the user clicks on the button, 
-    toggle between hiding and showing the dropdown content */
-    function myFunction() {
-      document.getElementById("myDropdown").classList.toggle("show");
-    }
-
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function(event) {
-      if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
         }
-      }
-    }
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
     </script>
 </body>
 </html>
