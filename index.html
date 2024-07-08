@@ -26,51 +26,60 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .dropbtn {
-            background-color: #3498DB;
+            background-color: #333;
             color: white;
             padding: 16px;
             font-size: 16px;
             border: none;
             cursor: pointer;
-            margin-left: 20px;
-        }
-        .dropbtn:hover, .dropbtn:focus {
-            background-color: #2980B9;
-        }
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-        .dropdown-content {
-            display: none;
             position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
+            left: 0;
         }
+
+        .dropbtn:hover, .dropbtn:focus {
+          background-color: #2980B9;
+        }
+
+        .dropdown {
+          position: relative;
+          display: inline-block;
+           position: absolute;
+           top: 20px;
+           left: 40px;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          overflow: auto;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 4;
+        }
+
         .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
         }
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
+
+        .dropdown a:hover {background-color: #ddd;}
+
+        .show {display: block;}
     </style>
 </head>
 <body>
-
+    <header>            
     <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <button onclick="DropdownMenu()" class="dropbtn"> <img src= https://askmormongirl.com/wp-content/uploads/2023/06/identical-to-mathematical-symbol.png width="50" height="50"></button>
         <div id="myDropdown" class="dropdown-content">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </div>
        </div>
-    <header>
         <h1>Welcome to My Beta Website</h1>
     </header>
     <div class="container">
@@ -83,7 +92,7 @@
         function showMessage() {
             alert("Hello! This is a test button.");
         }
-        function myFunction() {
+        function DropdownMenu() {
             document.getElementById("myDropdown").classList.toggle("show");
         }
         window.onclick = function(event) {
