@@ -27,9 +27,8 @@ header {
 
 .header-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    text-align: centered;
 }
 
 .title {
@@ -62,9 +61,7 @@ main {
 section {
     margin-bottom: 40px;
 }
-section h1{
-    text-align: center;
-}
+
 
 section h2 {
     font-size: 2rem;
