@@ -4,147 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aarons Website</title>
-    <style>
-        /* Basic styling */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #E5E3E3;
-        }
-        header {
-            background-color: #08004A;
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            padding: 10px;
-            align-items: center;
-        }
-        #header-links-container {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            align-items: flex-end;
-            gap: 20px;
-        }
-
-        .header-link {
-            margin-right: 20px;
-            font-size: 30px;
-            text-decoration: none;
-        }
-
-        .titles {
-            font-size: 35px;
-            font-family: Arial, sans-serif;
-            color: white;
-            text-decoration: none;
-            margin-left: 40px;
-        }
-
-        .parent{
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 2rem;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .containerL {
-            max-width: 600px;
-            padding: 2rem;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            flex: 1;
-        }
-        .containerR {
-            max-width: 600px;
-            padding: 2rem;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            flex: 1;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
 </head>
 <body>
     <header>     
-        <a class = "titles"><p style="color:white">All About Aaron</p></a>       
-        <div id="header-links-container">
-            <a href="index.html" class="header-link"><p style="color:white">Home</p></a>
-            <a href="projects.html" class="header-link"><p style="color:white">Projects</p></a>
-            <a href="certificates.html" class="header-link"><p style="color:white">Certificates and Awards</p></a>
-            <a href="journal.html" class="header-link"><p style="color:white">Journal</p></a>
-            </div>
+        <div class="container header-container">
+        <h1 class="title">All About Aaron</h1>   
+        <nav id="header-links-container">
+            <a href="index.html" class="header-link">Home</a>
+            <a href="projects.html" class="header-link">Projects</a>
+            <a href="certificates.html" class="header-link">Certificates and Awards</a>
+            <a href="journal.html" class="header-link">Journal</a>
+        </nav>
+    </div>
+    <p>.</p>
     </header>
-    <div class="container">
-        <h2>About Me</h2>
-        <p> Hello! My name is Aaron Scott, and I'm 22 years old and have been interested in computer-related endeavors for as long as I can remember! I'm extremely ambitious to be my best self, both socially and in the workplace. I grew up on Long Island my whole life, and have always loved it here. I am currently persuing my BS in Computer Science at Farmingdale State College, and have loved my time learning at this facility. I am hoping that my education, both in acadamia and in my extra efforts, will let me push the current boundaries of Artificial Intelligence. I am enthusiastic about contributing my skills to a dynamic team focused on developing innovative software solutions. My passion for cutting-edge technologies drives me to excel in collaborative environments, and I look forward to making a meaningful impact.</p>
-    </div>
-    <p></p>
-    <div class= "container">
-        <h2>Educational Background</h2>
-        <p> As stated before, I am persuing my BS in Computer Science at Farmingdale State College, and I am set to graduate in 2025, but this is far from my only area of study in the field. As i grew closer to obtaining my degree, I had found myself wanting to seek out more of the field on my own. This lead me to learn Python, which is the first Language I learned outside that of an official Educational Facility, where i made code to fix the little problems I faced on my computer. After these projects, I wanted to research areas of expertise to dedicate my free time to learning. This lead me to study Full Stack Development for a little bit, but ultimately I became drawn into the world of Artificial Intelligence, and Machine Learning. I took an Artificial Intelligence course at my College after deciding to explore this field, where I collaberated on a research paper with my professor about the potential applications of GPT models and Computer vision into the Homeschool System. This leads us to today, where I have been taking a course by IBM to obtain my "IBM AI Developer Professional Certificate", which will teach me not only about AI and ML techniques, but also how to efficiently function in a professional environment. And lastly, I have been doing smaller certificates on LinkedIn Learning, to educate myself in the more mathematical side of data and AI, such as Statistics, and Linear Algebra.</p>
-    </div>
-    <p></p>
-    <div class= "container">
-        <h2>Work Experience and Soft Skills</h2>
-        <p> I was very eager to begin working as soon as I could. When I was 14 years old, I had applied to and recieved my job at Mc'donalds. I had stayed there for 3 years, met alot of wonderful people, and loved my time there. I recieved a promotion at 16 years old, and recieved employee of the month the first month they began the program. My next job was King Kullen while in college as a cashier. It was there I was often praised for my punctuality, positivity, haste, and teamwork. Leading to today, where I work at the Mount Sinai Harbor, cleaning peoples boats when they call the office. All of my work experience has given me experience in:
-            <ul>
-                <li>Teamwork</li>
-                <li>Punctuality</li>
-                <li>Self Sufficiency</li>
-                <li>Efficiency</li>
-                <li>Leadership</li>
-                <li>Critical thinking</li>
-                <li>Communication</li>
-                <li>And so much more!</li>
-            </ul>
-        </p>
-    </div>
-    <p></p>
-        <div class = "container">
-            <h2>Hard Skills and Knowledge</h2>
-            <p>    
+
+    <main class="container">
+        <div class="fade-in-text section left">
+            <section class="intro">
+                <h2>Who is "Aaron Scott"?</h2>
+                <p>That's me! My name is Aaron Scott. I’m 22 years old and have been interested in computer-related endeavors for as long as I can remember! I’m extremely ambitious to be my best self, both socially and in the workplace. I grew up on Long Island my whole life and have always loved it here. I am currently pursuing my BS in Computer Science at Farmingdale State College and have loved my time learning at this facility. I am hoping that my education, both in academia and in my extra efforts, will let me push the current boundaries of Artificial Intelligence. I am enthusiastic about contributing my skills to a dynamic team focused on developing innovative software solutions. My passion for cutting-edge technologies drives me to excel in collaborative environments, and I look forward to making a meaningful impact.</p>
+            </section>
+        </div>
+
+        <div class="fade-in-text section right">
+            <img src="https://edurank.org/assets/img/uni-logos/farmingdale-state-college-logo.png" alt="Education Background">
+            <section class="education">
+                <h2>My Educational Background</h2>
+                <p>As stated before, I am pursuing my BS in Computer Science at Farmingdale State College and am set to graduate in 2025. But this is far from my only area of study in the field. After learning Python outside of an official educational facility, I worked on projects to fix little computer problems. Later, I explored Full Stack Development, but I was ultimately drawn into the world of Artificial Intelligence and Machine Learning. I collaborated on a research paper about the potential applications of GPT models and computer vision in the homeschool system. Currently, I'm taking an IBM AI Developer Professional Certificate course to learn AI and ML techniques and how to function in a professional environment. Additionally, I'm studying more mathematical aspects of data and AI, such as Statistics and Linear Algebra through LinkedIn Learning.</p>
+            </section>
+        </div>
+
+        <div class="fade-in-text">
+        <section class="experience">
+            <h2>Work Experience and Soft Skills</h2>
+            <p> I was very eager to begin working as soon as I could. When I was 14 years old, I had applied to and recieved my job at Mc'donalds. I had stayed there for 3 years, met alot of wonderful people, and loved my time there. I recieved a promotion at 16 years old, and recieved employee of the month the first month they began the program. My next job was King Kullen while in college as a cashier. It was there I was often praised for my punctuality, positivity, haste, and teamwork. Leading to today, where I work at the Mount Sinai Harbor, cleaning peoples boats when they call the office. All of my work experience has given me experience in:</p>
+                <div class = centered>
                 <ul>
-                    <li>Data Structures/Algorithms</li>
-                    <li>Database Management</li>
-                    <li>Object Oriented Programming</li>
-                    <li>Computer Networking</li>
-                    <li>Neural Networks</li>
-                    <li>APIs</li>
-                    <li>Software Engineering</li>
-                    <li>Linear Algebra/Calculus/Statistics</li>
-                    <li>Data Science</li>
-                    <li>Artificial Intelligence</li>
-                    <li>Python Libraries (Numpy, Pandas, NLTK, etc)</li>
-                    <li>AGILE</li>
-                    <li>SDLC</li>
-            </ul> 
-        </p>
+                    <li>-Teamwork</li>
+                    <li>-Punctuality</li>
+                    <li>-Self Sufficiency</li>
+                    <li>-Efficiency</li>
+                    <li>-Leadership</li>
+                    <li>-Critical thinking</li>
+                    <li>-Communication</li>
+                    <li>-And so much more!</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <div class="fade-in-text">
+            <section class="skills">
+                <h2>Hard Skills and Knowledge</h2>
+                <div class = centered>   
+                    <ul>
+                        <li>-Data Structures/Algorithms</li>
+                        <li>-Database Management</li>
+                        <li>-Object Oriented Programming</li>
+                        <li>-Computer Networking</li>
+                        <li>-Neural Networks</li>
+                        <li>-APIs</li>
+                        <li>-Software Engineering</li>
+                        <li>-Linear Algebra/Calculus/Statistics</li>
+                        <li>-Data Science</li>
+                        <li>-Artificial Intelligence</li>
+                        <li>-Python Libraries (Numpy, Pandas, NLTK, etc)</li>
+                        <li>-AGILE</li>
+                        <li>-SDLC</li>
+                </ul> 
         </div>
-        <p></p>
-        <div class = "container">
-            <h2>Programming Languages</h2>
-            <p> </p>
-            <h3>Highly Proficient</h3>
-            <ul>
-                <li>Java</li>
-                <li>Python</li>
-            </ul>
-            <h3>Medium Proficiency</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>SQL</li>
-            </ul>
-            <h3>Knowledgeable</h3>
-            <ul>
-                <li>Javascript</li>
-            </ul>
+            </section>
         </div>
-</body>
+        <div class="fade-in-text section left">
+            <section class="languages">
+                <h2>Programming Languages</h2>
+                <p> </p>
+                <div class = centered>
+                <h3>Highly Proficient</h3>
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                </ul>
+                <h3>Medium Proficiency</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SQL</li>
+                </ul>
+                <h3>Knowledgeable</h3>
+                <ul>
+                    <li>Javascript</li>
+                </ul>
+            </div>
+            </section>
+            <img src="https://images.wallpapersden.com/image/download/programming-coding-language_bGhpbm6UmZqaraWkpJRqZWWtamVl.jpg" alt="langs" width = "400px" height = "400px" >
+        </div>
+        </main>
+    </body>
 </html>

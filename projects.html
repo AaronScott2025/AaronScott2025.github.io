@@ -4,101 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aarons Website</title>
-    <style>
-        /* Basic styling */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        header {
-            background-color: #08004A;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 2rem;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .dropbtn {
-            background-color: #08004A;
-            color: white;
-            padding: 16px;
-            font-size: 16px;
-            cursor: pointer;
-            position: absolute;
-            left: 0;
-        }
-        .dropbtn:hover, .dropbtn:focus {
-          background-color: #2980B9;
-        }
-
-        .dropdown {
-          position: relative;
-          display: inline-block;
-           position: absolute;
-           left: 0;
-        }
-
-        .dropdown-content {
-          display: none;
-          position: absolute;
-          background-color: #f1f1f1;
-          min-width: 160px;
-          overflow: auto;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 4;
-        }
-
-        .dropdown-content a {
-          color: black;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-        }
-
-        .dropdown a:hover {background-color: #ddd;}
-
-        .show {display: block;}
-    </style>
+<link rel="stylesheet" href="styles.css">
+<script src="scripts.js"></script>
 </head>
 <body>
-    <header>            
-    <div class="dropdown">
-        <button onclick="DropdownMenu()" class="dropbtn"> More Info </button>
-        <div id="myDropdown" class="dropdown-content">
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="certificates.html">Certificates and Awards</a>
-            <a href="journal.html">Journal</a>
-        </div>
-       </div>
-        <h1>Aaron's Projects</h1>
-    </header>
-    <div class="container">
-        <h2>An Introduction</h2>
-        <p> In the quiet corners of my life, in between work and school endeavours, I’ve embarked on a journey of personal programming projects. These endeavors, became passion projects, exploring any subject I was interested in at the time. I feel the following projects demonstrate my greatest performance in programming. More of my 'smaller scale' programs can be found on <a href="https://github.com/AaronScott2025">my Github page.</a> </p>
+    <header>     
+        <div class="container header-container">
+        <h1 class="title">All About Aaron</h1>   
+        <nav id="header-links-container">
+            <a href="index.html" class="header-link"><p style="color:white">Home</p></a>
+            <a href="projects.html" class="header-link"><p style="color:white">Projects</p></a>
+            <a href="certificates.html" class="header-link"><p style="color:white">Certificates and Awards</p></a>
+            <a href="journal.html" class="header-link"><p style="color:white">Journal</p></a>
+        </nav>
     </div>
-    <script>
-        function DropdownMenu() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                for (var i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
+    </header>
+<body>
+    <main class="container">
+        <section class="intro">
+            <h2>An Introduction</h2>
+            <p> In the quiet corners of my life, in between work and school endeavours, I’ve embarked on a journey of personal programming projects. These endeavors, became passion projects, exploring any subject I was interested in at the time. I feel the following projects demonstrate my greatest performance in programming. More of my 'smaller scale' programs can be found on <a href="https://github.com/AaronScott2025">my Github page.</a> </p>
+        </section>
+        To Be Continued 
+    </main>
 </body>
 </html>
