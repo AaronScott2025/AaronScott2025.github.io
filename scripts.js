@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
          entry.target.style.transform = 'translateY(20px)';
        }
      });
-   }, { threshold: 0.5 });
+   }, { threshold: 1 });
 
   fadeInSection.forEach(section => {
     fadeInOutObserver.observe(section);
