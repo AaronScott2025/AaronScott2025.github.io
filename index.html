@@ -15,9 +15,33 @@
         header {
             background-color: #08004A;
             color: #fff;
-            text-align: center;
-            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            align-items: center;
         }
+        #header-links-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-end;
+            gap: 20px;
+        }
+
+        .header-link {
+            margin-right: 20px;
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        .titles {
+            font-size: 35px;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-decoration: none;
+            margin-left: 40px;
+        }
+
         .parent{
             display: flex;
             justify-content: center;
@@ -44,61 +68,17 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             flex: 1;
         }
-        .dropbtn {
-            background-color: #08004A;
-            color: white;
-            padding: 16px;
-            font-size: 16px;
-            cursor: pointer;
-            position: absolute;
-            left: 0;
-        }
-
-        .dropbtn:hover, .dropbtn:focus {
-          background-color: #2980B9;
-        }
-
-        .dropdown {
-          position: relative;
-          display: inline-block;
-           position: absolute;
-           left: 0;
-        }
-
-        .dropdown-content {
-          display: none;
-          position: absolute;
-          background-color: #f1f1f1;
-          min-width: 160px;
-          overflow: auto;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 4;
-        }
-
-        .dropdown-content a {
-          color: black;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-        }
-
-        .dropdown a:hover {background-color: #ddd;}
-
-        .show {display: block;}
     </style>
 </head>
 <body>
-    <header>            
-    <div class="dropdown">
-        <button onclick="DropdownMenu()" class="dropbtn"> More Info </button>
-        <div id="myDropdown" class="dropdown-content">
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="certificates.html">Certificates and Awards</a>
-            <a href="journal.html">Journal</a>
-        </div>
-       </div>
-        <h1>All About Aaron</h1>
+    <header>     
+        <a class = "titles"><p style="color:white">All About Aaron</p></a>       
+        <div id="header-links-container">
+            <a href="index.html" class="header-link"><p style="color:white">Home</p></a>
+            <a href="projects.html" class="header-link"><p style="color:white">Projects</p></a>
+            <a href="certificates.html" class="header-link"><p style="color:white">Certificates and Awards</p></a>
+            <a href="journal.html" class="header-link"><p style="color:white">Journal</p></a>
+            </div>
     </header>
     <div class="container">
         <h2>About Me</h2>
@@ -166,21 +146,5 @@
                 <li>Javascript</li>
             </ul>
         </div>
-    <script>
-        function DropdownMenu() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                for (var i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
 </body>
 </html>
