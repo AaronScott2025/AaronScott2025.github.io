@@ -15,7 +15,6 @@ body {
 .container {
     width: 80%;
     margin: auto;
-        column-gap: 20px;
 }
 
 /* Header styling */
@@ -134,13 +133,6 @@ ul li {
     margin: 20px 0;
 }
 
-.section.left {
-    flex-direction: row;
-}
-
-.section.right {
-    flex-direction: row-reverse;
-}
 
 .section img {
     max-width: 50%;
