@@ -15,6 +15,7 @@ body {
 .container {
     width: 80%;
     margin: auto;
+        column-gap: 20px;
 }
 
 /* Header styling */
@@ -99,6 +100,24 @@ ul li {
     transform: translateY(30px);
     transition: opacity 1s ease, transform 1s ease;
 }
+
+.bottomPage {
+    text-align: center;
+    align-items: center;
+    font-size: 3rem;
+    flex-direction: column;
+}
+
+.sec1 {
+    background-color: #EAEAEA ;
+}
+
+.sec2 {
+    width: flex;
+    background-color: #000000 ;
+}
+
+
 
 
 /* Flexbox container for layout */
