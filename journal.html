@@ -4,80 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aarons Website</title>
-<style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #E5E3E3;
-        }
-        header {
-            background-color: #08004A;
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            padding: 10px;
-            align-items: center;
-        }
-        #header-links-container {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            align-items: flex-end;
-            gap: 20px;
-        }
-
-        .header-link {
-            margin-right: 20px;
-            font-size: 30px;
-            text-decoration: none;
-        }
-
-        .titles {
-            font-size: 35px;
-            font-family: Arial, sans-serif;
-            color: white;
-            text-decoration: none;
-            margin-left: 40px;
-        }
-
-        .parent{
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 2rem;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .containerL {
-            max-width: 600px;
-            padding: 2rem;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            flex: 1;
-        }
-        .containerR {
-            max-width: 600px;
-            padding: 2rem;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            flex: 1;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
 </head>
 <body>
     <header>     
-        <a class = "titles"><p style="color:white">All About Aaron</p></a>       
-        <div id="header-links-container">
-            <a href="index.html" class="header-link"><p style="color:white">Home</p></a>
-            <a href="projects.html" class="header-link"><p style="color:white">Projects</p></a>
-            <a href="certificates.html" class="header-link"><p style="color:white">Certificates and Awards</p></a>
-            <a href="journal.html" class="header-link"><p style="color:white">Journal</p></a>
-            </div>
+        <div class="container header-container">
+        <h1 class="title">Journal</h1>   
+        <nav id="header-links-container">
+            <a href="index.html" class="header-link">Biography</a>
+            <a href="projects.html" class="header-link">Projects</a>
+            <a href="certificates.html" class="header-link">Validations</a>
+            <a href="journal.html" class="header-link">Journal</a>
+        </nav>
+    </div>
+    <p>.</p>
     </header>
     </body>
 </html>
