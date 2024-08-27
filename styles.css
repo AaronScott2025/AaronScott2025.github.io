@@ -19,20 +19,23 @@ body {
 
 /* Header styling */
 header {
-    background: linear-gradient(to bottom,#08004A,transparent);
+    background: #111111;
     color: #fff;
     padding: 20px 0;
-
+    text-align: center;
 }
 
 .header-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
 
 .title {
     font-size: 3rem;
+    margin-bottom: 0;
+    font-family: 'Cambria', Georgia, serif;
 }
 
 #header-links-container {
@@ -43,14 +46,26 @@ header {
 .header-link {
     text-decoration: none;
     color: white;
-    font-size: 1.2rem;
-    transition: color 0.3s;
     font-size: 30px;
-
+    transition: color 0.3s;
 }
 
 .header-link:hover {
     color: #FFD700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Mobile layout adjustments */
+    .header-container {
+        flex-direction: column; /* Ensure vertical stacking on mobile */
+        text-align: center; /* Center text alignment on mobile */
+    }
+
+    #header-links-container {
+        flex-direction: column; /* Stack links vertically on mobile */
+        gap: 10px; /* Space between links */
+    }
 }
 
 /* Main content styling */
