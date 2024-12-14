@@ -1,18 +1,22 @@
- //Fading Text in JS
-document.addEventListener('DOMContentLoaded', () => {
-  const fadeInSection = document.querySelectorAll('.fade-in-text');
+let currentSlide = 0;
 
-  const fadeInOutObserver = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-       if (entry.isIntersecting) {
-         entry.target.style.opacity = 1;
-         entry.target.style.transform = 'translateY(0)';
-       }
-     });
-   }, { threshold: 0.5 });
+function showSlide(index) {
+    const slides = document.querySelectorAll(".slide");
+    const totalSlides = slides.length;
 
-  fadeInSection.forEach(section => {
-    fadeInOutObserver.observe(section);
-  });
-});
+    // Wrap the index to ensure it stays within bounds
+    currentSlide = (index + totalSlides) % totalSlides;
 
+    // Hide all slides
+    slides.forEach((slide) => slide.classList.remove("active"));
+
+    // Show the current slide
+    slides[currentSlide].classList.add("active");
+}
+
+function changeSlide(direction) {
+    showSlide(currentSlide + direction);
+}
+
+// Initialize the first slide
+showSlide(0);
