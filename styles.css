@@ -230,7 +230,7 @@ main {
 }
 
 .slide.active {
-    display: block; /* Only the active slide is visible */
+    display: block; /* Only the active slide is visible s*/
 }
 
 /* Slide Image */
